@@ -1,0 +1,13 @@
+.jumbotron {
+	background-image: url('https://dl.dropboxusercontent.com/u/9778943/ajt_site/images/websitebanner.jpg');
+	color:black;
+	background-size: cover;
+	min-height:300px;
+	margin-top:-20px;
+	margin-bottom:10px;
+}
+
+body {
+padding-top: 0x;
+padding-bottom: 100px;
+}
