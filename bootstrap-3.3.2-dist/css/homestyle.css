@@ -7,6 +7,8 @@
 	margin-bottom:10px;
 }
 
+.navbar { border-radius: 0 !important; }
+
 body {
 padding-top: 0x;
 padding-bottom: 100px;
