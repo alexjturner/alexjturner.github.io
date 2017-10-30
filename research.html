@@ -28,6 +28,7 @@
   </head>
   <body>
 
+        <a name="RPtop"></a>
 	<div class="navbar navbar-inverse">
 	  <div class="container-fluid">
 		<div class="navbar-header">
@@ -77,7 +78,7 @@
 
 <!--Methane-->
            <div class="row"><div class="col-md-12 bg-info">
-           <a name="RPmethane"></a><h3>Sources and sinks of atmospheric methane</h3>
+           <a name="RPmethane"></a><h3>Sources and sinks of atmospheric methane  <small><a href="#RPtop">(back to top)</a></small></h3>
            <p> Methane is the second most important anthropogenic greenhouse gas after CO<sub>2</sub>.  As a short-lived climate forcing agent (lifetime ~10 years), it provides a lever for slowing near-term climate change.  Major anthropogenic sources of methane include oil/gas exploration and use, livestock, landfills, coal mining, and rice cultivation.  Wetlands are the dominant natural source.  The magnitude and spatial distribution of methane sources is highly uncertain and difficult to constrain.
            <BR><BR><img src="ajt_site/other/posterior.gif" height="250" style="border:2px solid black"><BR>
            <b>Fig.</b><I>  Simulated methane concentrations using emissions constrained by satellite observations.</I>
@@ -102,7 +103,7 @@
 
 <!--OH-->
            <div class="row"><div class="col-md-12 bg-info">
-           <a name="RPhydroxyl"></a><h3>Chemical feedbacks, variability, and predictability</h3>
+           <a name="RPhydroxyl"></a><h3>Chemical feedbacks, variability, and predictability  <small><a href="#RPtop">(back to top)</a></small></h3>
            <p> The hydroxyl radical (OH) is the primary oxidant for a number of non-CO<sub>2</sub> greenhouse gases and CFCs.  It also reglates the production of tropospheric ozone, a leading pollutant.  As such, changes in tropospheric OH could have large implications for both future climate and air quality.  Yet our understanding of tropospheric OH is quite poor, evidenced by the disagreement on the long-term trends in OH.
            <BR><BR><img src="ajt_site/other/oh.png" height="250" style="border:2px solid black"><BR>
            <b>Fig.</b><I>  Simulated tropospheric OH anomalies using a 6000 year equilibrium simulation in a coupled chemistry-climate model.</I>
@@ -121,7 +122,7 @@
 
 <!--CO2-->
            <div class="row"><div class="col-md-12 bg-info">
-           <a name="RPco2"></a><h3>Urban carbon dioxide</h3>
+           <a name="RPco2"></a><h3>Urban carbon dioxide  <small><a href="#RPtop">(back to top)</a></small></h3>
            <p> Carbon dixoide (CO<sub>2</sub>) is an atmospheric trace gas and the largest anthropogenic radiative forcer.  CO<sub>2</sub> levels have increased from 280 ppm in pre-industrial times to greater than 400 ppm in the present, largely due to changes in fossil fuel emissions, and can be measured via ground stations, aircraft, and satellites.  The paradigm in ground-based trace gas measurements has been to employ a sparse network of high-precision instruments that can be used to measure atmospheric concentrations.  These concentrations are then used to estimate emission fluxes, validate numerical models, and quantify changes in physical processes.  However, the BEACO<sub>2</sub>N project (<a target="_blank" href="http://beacon.berkeley.edu/Overview.aspx">http://beacon.berkeley.edu/Overview.aspx</a>) aims to provide a better understanding of the emissions and physical processes governing CO<sub>2</sub> by deploying a high density of moderate-precision instruments.
            <BR><BR><img src="ajt_site/other/berkeley.gif" width="400" style="border:2px solid black"><BR>
            <b>Fig.</b><I>  We constructed a custom hourly 1km state-of-the-science CO<sub>2</sub> emission inventory to use as the prior in an inverse modeling framework.  The inventory resolves freeway emissions in an urban core and includes 5,000 point sources in the Bay Area.</I>
@@ -144,7 +145,7 @@
 
 <!--RBFs-->
            <div class="row"><div class="col-md-12 bg-info">
-           <a name="RPrbfs"></a><h3>Designing multi-scale state vectors</h3>
+           <a name="RPrbfs"></a><h3>Designing multi-scale state vectors  <small><a href="#RPtop">(back to top)</a></small></h3>
            <p> Inverse models quantify the state variables driving the evolution of a physical system by using observations of that system.   This requires a physical model that relates a set of input variables (state vector) to a set of output variables (observation vector).  A critical step in solving the inverse problem is determining the amount of information contained in the observations and choosing the state vector accordingly.  This is a non-trivial problem when using a large ensemble of observations with large errors.
            <BR><BR><img src="ajt_site/other/rbfs.png" width="300" style="border:2px solid black"><BR>
            <b>Fig.</b><I>  Illustration of using a Gaussian mixture model and radial basis functions for defining the state vector.  The Gaussians allow us to retain high resolution features in regions that may contain large point sources (e.g., Los Angeles) and coarsen the state vector elsewhere.</I>
