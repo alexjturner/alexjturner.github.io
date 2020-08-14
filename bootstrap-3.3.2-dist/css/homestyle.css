@@ -26,3 +26,8 @@ padding-bottom: 100px;
 .white, .white a {
   color: #fff;
 }
+
+/* Modify the background color */ 
+.navbar-custom { 
+    background-color: #4b2e83; 
+} 
