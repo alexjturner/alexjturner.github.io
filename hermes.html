@@ -60,28 +60,43 @@
         <div class="col-md-11">
         <h2>Hermes</h2>
         <b>Hermes is our group's high performance computing system.</b><BR>  In Greek mythology, Hermes was the messenger of the gods. Hermes could also fly and was the patron of alchemists.  As such, he seemed like a fitting namesake for a high performance computing system used to study atmospheric chemistry.<BR>
-        <BR>
-        <b>Configuration:</b>
+<HR>
+        <b>System Summary</b>
         <ul>
-           <li>Debian GNU OS</li>
-           <li>Slurm scheduler</li>
-           <li>24 compute nodes, 768 cores, 24 GPUs</li>
+           <li><b>Compute:</b> 24 nodes, 768 CPU cores</li>
+           <li><b>GPUs:</b> 2&times; H100 GPUs and 24&times; A2 GPUs</li>
+           <li><b>Memory:</b> 192 GB RAM per compute node and 1 TB RAM per GPU node</li>
+           <li><b>Storage:</b> 1 PB usable RAID-6 storage</li>
+           <li><b>Interconnect:</b> 100 Gb/s InfiniBand</li>
+        </ul>
+        <BR>
+        <b>Detailed Description</b>
+        <ul>
+           <li>Compute nodes:</li>
            <ul>
-              <li>Dual Intel Xeon 16-core Gold 6226R (2.9 GHz) processors</li>
-              <li>NVIDIA A2 GPU (16GB)</li>
-              <li>192GB RAM</li>
+              <li>24 compute nodes</li>
+              <li>Dual Intel Xeon Gold 6226R processors (16 cores each, 2.9 GHz)</li>
+              <li>192 GB RAM per node</li>
+              <li>1&times; NVIDIA A2 GPU (16 GB) per node</li>
            </ul>
-           <li>GPU partition</li>
+           <li>GPU partition:</li>
            <ul>
-              <li>2 NVIDIA H100 GPUs (80GB)</li>
-              <li>Dual Intel Xeon 16-core Gold 6526Y (2.8 GHz) processors</li>
-              <li>1TB RAM and 7TB cache disk</li>
+              <li>2&times; NVIDIA H100 GPUs (80 GB each)</li>
+              <li>Dual Intel Xeon Gold 6526Y (16 cores each, 2.8 GHz)</li>
+              <li>1 TB RAM</li>
+              <li>7 TB local cache disk</li>
            </ul>
-           <li>1020TB RAID 6 storage</li>
-           <li>Mellanox MSB7790-EB2F Infiniband switch</li>
+           <li>Storage and networking:</li>
            <ul>
-              <li>Thirty-six ports</li>
-              <li>100Gb/s full bi-directional bandwith per port</li>
+              <li>1020 TB RAID-6 shared storage</li>
+              <li>Mellanox MSB7790-EB2F InfiniBand switch</li>
+              <li>36 ports</li>
+              <li>100 Gb/s full bi-directional bandwidth per port</li>
+           </ul>
+           <li>Software environment:</li>
+           <ul>
+              <li>Debian GNU OS</li>
+              <li>Slurm workload manager</li>
            </ul>
         </ul>
 
