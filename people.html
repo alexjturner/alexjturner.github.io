@@ -1,344 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=.37">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="ajt_site/images/logo.ico">
-    <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.min.css">
-    <script src="bootstrap-3.3.2-dist/js/jquery.min.js"></script>
-    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="ajt_site/images/logo.ico">
+  <title>Turner Group</title>
+  <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-3.3.2-dist/css/homestyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
 
-    <title>Turner Group</title>
-
-    <link href="./bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="jumbotron.css" rel="stylesheet">
-    <link href="./bootstrap-3.3.2-dist/css/homestyle.css" rel="stylesheet">
-
-    <!-- Icons: Font Awesome for email, website, scholar -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <style>
-      /* Grid: left-aligned row of cards */
-      .people-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 28px;
-        justify-content: flex-start;
-        margin-bottom: 24px;
-      }
-
-      /* Each card: content centered within it */
-      .person-card {
-        width: 175px;
-        text-align: center;
-      }
-
-      .person-card img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto 10px auto;
-      }
-
-      .person-card .person-name {
-        font-size: 1.1em;       /* same as body/alumni text */
-        font-weight: bold;
-        margin-bottom: 3px;
-        line-height: 1.3;
-      }
-
-      .person-card .person-role {
-        font-size: 1em;
-        margin-bottom: 6px;
-        line-height: 1.4;
-      }
-
-      .person-card .person-interests {
-        font-size: 1em;
-        margin-bottom: 8px;
-        line-height: 1.4;
-      }
-
-      /* Icon link row */
-      .person-links {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-
-      .person-links a {
-        font-size: 1.15em;
-        color: inherit;
-        text-decoration: none;
-        transition: opacity 0.15s;
-      }
-
-      .person-links a:hover {
-        opacity: 0.6;
-        text-decoration: none;
-      }
-
-      /* PI row: photo left, bio right */
-      .pi-row {
-        display: flex;
-        gap: 24px;
-        align-items: flex-start;
-        margin-bottom: 20px;
-      }
-
-      .pi-row img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        flex-shrink: 0;
-      }
-
-      @media (max-width: 600px) {
-        .person-card { width: 145px; }
-        .person-card img { width: 120px; height: 120px; }
-        .pi-row { flex-direction: column; }
-      }
-    </style>
-  </head>
-  <body>
-
-    <!-- Nav bar -->
-    <div class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Turner Group</a>
-        </div>
-        <div>
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li class="active"><a href="people.html">People</a></li>
-            <li><a href="hermes.html">Computing</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="https://drive.google.com/drive/u/1/folders/1GsqfX12tf3sA6yZZ7Enyfh3E0_927cRW" target="_blank">Internal</a></li>
-          </ul>
-        </div>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Turner Group</a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="active"><a href="people.html">People</a></li>
+          <li><a href="hermes.html">Computing</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="https://drive.google.com/drive/u/1/folders/1GsqfX12tf3sA6yZZ7Enyfh3E0_927cRW" target="_blank">Internal</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- Container -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>The Turner Group</h2>
-          <p>See here for <a href="group.html">group photos</a>.<BR>
-          Prospective graduate students should refer to my <a href="faq.html">Frequently Asked Questions</a> and apply to UW through the <a href="https://atmos.uw.edu/students/graduate-program/prospective-students/" target="_blank">Department of Atmospheric and Climate Science</a>. Prospective postdocs should also consider applying for fellowships such as the <a href="https://cicoes.uw.edu/education/postdoc-program/" target="_blank">CICOES postdoc program</a> at UW, the <a href="https://cpaess.ucar.edu/cgc" target="_blank">NOAA Climate &amp; Global Change postdoc</a>, various <a href="https://www.nsf.gov/funding/education.jsp?fund_type=3" target="_blank">NSF postdocs</a>, and the <a href="https://schmidtsciencefellows.org/overview/" target="_blank">Schmidt Science Fellows</a>. Feel free to contact me for more information.</p>
-          <HR>
-        </div>
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>The Turner Group</h2>
+        <p>See here for <a href="group.html">group photos</a>.<br>
+        Prospective graduate students should refer to my <a href="faq.html">Frequently Asked Questions</a> and apply to UW through the <a href="https://atmos.uw.edu/students/graduate-program/prospective-students/" target="_blank">Department of Atmospheric and Climate Science</a>. Prospective postdocs should also consider applying for fellowships such as the <a href="https://cicoes.uw.edu/education/postdoc-program/" target="_blank">CICOES postdoc program</a> at UW, the <a href="https://cpaess.ucar.edu/cgc" target="_blank">NOAA Climate &amp; Global Change postdoc</a>, various <a href="https://www.nsf.gov/funding/education.jsp?fund_type=3" target="_blank">NSF postdocs</a>, and the <a href="https://schmidtsciencefellows.org/overview/" target="_blank">Schmidt Science Fellows</a>. Feel free to contact me for more information.</p>
+        <hr>
+      </div>
 
-        <!-- Alex Turner (PI) -->
-        <div class="col-md-12">
-          <div class="pi-row">
-            <img src="ajt_site/images/AlexTurner.jpg" alt="Alex Turner">
-            <div>
-              <h3 style="margin-top:0;">Alex Turner<BR><small>Assistant Professor, Department of Atmospheric and Climate Science</small></h3>
-              <p>Alex is an Assistant Professor in the Department of Atmospheric and Climate Science at the University of Washington. His research combines satellite remote sensing, numerical modeling, and Bayesian inference to investigate interactions between the carbon cycle and atmospheric chemistry. Before joining UW, he was a Miller Postdoctoral Fellow at UC Berkeley. He completed his PhD in atmospheric chemistry at Harvard in 2017 and his BS in mechanical engineering at the University of Colorado in 2012. He received the AGU Holton Award in 2020 for early-career research excellence and leads the <a href="https://fetch4.github.io/" target="_blank">FETCH<sub>4</sub> project</a>, an international collaboration across 28 institutions and 8 countries focused on improving our understanding of the past and modern methane cycle.<BR><BR>
-              Alex was born in Cambridge, MA and grew up in Boulder, CO. Growing up in Boulder helped foster his love of the environment and the outdoors. During the summer he spends his free time trail running, rock climbing, and backpacking. In the winter, he enjoys skiing and telemarking.<BR><BR>
-              Email: <a href="/cdn-cgi/l/email-protection#aedadbdcc0cbdccfc4eedbd980cbcadb">turneraj (at) uw (dot) edu</a><BR>
-              Mail: <a href="https://goo.gl/maps/BsEVkz43Hkv2mdaJ7" target="_blank">706 ATG Building</a>, Box 351640<BR>
-              <a href="ajt_site/other/turnerCV.pdf" target="_blank">CV</a> and <a href="https://scholar.google.com/citations?user=tfmVgv0AAAAJ" target="_blank">Google Scholar</a></p>
-            </div>
+      <!-- Alex Turner (PI) -->
+      <div class="col-md-12">
+        <div class="pi-row">
+          <img src="ajt_site/images/AlexTurner.jpg" alt="Alex Turner">
+          <div>
+            <h3 style="margin-top:0;">Alex Turner<br><small>Assistant Professor, Department of Atmospheric and Climate Science</small></h3>
+            <p>Alex is an Assistant Professor in the Department of Atmospheric and Climate Science at the University of Washington. His research combines satellite remote sensing, numerical modeling, and Bayesian inference to investigate interactions between the carbon cycle and atmospheric chemistry. Before joining UW, he was a Miller Postdoctoral Fellow at UC Berkeley. He completed his PhD in atmospheric chemistry at Harvard in 2017 and his BS in mechanical engineering at the University of Colorado in 2012. He received the AGU Holton Award in 2020 for early-career research excellence and leads the <a href="https://fetch4.github.io/" target="_blank">FETCH<sub>4</sub> project</a>, an international collaboration across 28 institutions and 8 countries focused on improving our understanding of the past and modern methane cycle.<br><br>
+            Alex was born in Cambridge, MA and grew up in Boulder, CO. Growing up in Boulder helped foster his love of the environment and the outdoors. During the summer he spends his free time trail running, rock climbing, and backpacking. In the winter, he enjoys skiing and telemarking.<br><br>
+            Email: <a href="mailto:turneraj@uw.edu">turneraj (at) uw (dot) edu</a><br>
+            Mail: <a href="https://goo.gl/maps/BsEVkz43Hkv2mdaJ7" target="_blank">706 ATG Building</a>, Box 351640<br>
+            <a href="ajt_site/other/turnerCV.pdf" target="_blank">CV</a> and <a href="https://scholar.google.com/citations?user=tfmVgv0AAAAJ" target="_blank">Google Scholar</a></p>
           </div>
         </div>
+      </div>
 
-        <!-- Graduate Students -->
-        <div class="col-md-12">
-          <HR>
-          <h3>Graduate Students</h3><BR>
-          <div class="people-grid">
+      <!-- Graduate Students -->
+      <div class="col-md-12">
+        <hr>
+        <h3>Graduate Students</h3><br>
+        <div class="people-grid">
 
-            <!-- Nikhil -->
-            <div class="person-card">
-              <a href="https://nd349.github.io/" target="_blank" title="Website">
-                <img src="ajt_site/images/NikhilDadheech.jpg" alt="Nikhil Dadheech">
-                <div class="person-name">Nikhil Dadheech</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#5d33396e69641d282a73383928" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://nd349.github.io/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
-                <a href="https://scholar.google.com/citations?user=4zlViZgAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
-              </div>
-              <div class="person-interests">Methane, machine learning, and remote-sensing.</div>
+          <!-- Nikhil -->
+          <div class="person-card">
+            <a href="https://nd349.github.io/" target="_blank" title="Website">
+              <img src="ajt_site/images/NikhilDadheech.jpg" alt="Nikhil Dadheech">
+              <div class="person-name">Nikhil Dadheech</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:nd349@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://nd349.github.io/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
+              <a href="https://scholar.google.com/citations?user=4zlViZgAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
             </div>
-
-            <!-- Iana -->
-            <div class="person-card">
-              <a href="https://pcc.uw.edu/profiles/iana-ferguson" target="_blank" title="Website">
-                <img src="ajt_site/images/IanaFerguson.jpg" alt="Iana Ferguson">
-                <div class="person-name">Iana Ferguson</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#1871616a7e586d6f367d7c6d" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://pcc.uw.edu/profiles/iana-ferguson" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
-              </div>
-              <div class="person-interests">Methane stable isotopes and wetlands.</div>
-            </div>
-
-            <!-- Eliot -->
-            <div class="person-card">
-              <a href="https://eliotjkim.github.io/" target="_blank" title="Website">
-                <img src="ajt_site/images/EliotKim.jpg" alt="Eliot Kim">
-                <div class="person-name">Eliot Kim</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#9cf9f6f7f5f1addce9ebb2f9f8e9" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://eliotjkim.github.io/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
-                <a href="https://scholar.google.com/citations?user=kQ7acHQAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
-              </div>
-              <div class="person-interests">Chemistry-climate interactions and ML.</div>
-            </div>
-
-            <!-- Eric -->
-            <div class="person-card">
-              <a href="https://ericjmei.github.io/" target="_blank" title="Website">
-                <img src="ajt_site/images/EricMei.jpg" alt="Eric Mei">
-                <div class="person-name">Eric Mei</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#7c191119153c090b52191809" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://ericjmei.github.io/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
-                <a href="https://scholar.google.com/citations?user=y8gpQDoAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
-              </div>
-              <div class="person-interests">Paleo and chemistry-climate interactions.</div>
-            </div>
-
-            <!-- James -->
-            <div class="person-card">
-              <a href="https://james-y-yoon.github.io/" target="_blank" title="Website">
-                <img src="ajt_site/images/JamesYoon.jpg" alt="James Yoon">
-                <div class="person-name">James Yoon</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#19736060767677596c6e377c7d6c" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://james-y-yoon.github.io/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
-                <a href="https://scholar.google.com/citations?user=7PUTovAAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
-              </div>
-              <div class="person-interests">Isoprene, soil NO<sub>x</sub>, and the oxidative capacity.</div>
-            </div>
-
+            <div class="person-interests">Atmospheric methane and machine learning.</div>
           </div>
-        </div>
 
-        <!-- Postbac -->
-        <div class="col-md-12">
-          <HR>
-          <h3>Postbac Researchers</h3><BR>
-          <div class="people-grid">
-
-            <!-- Sydney -->
-            <div class="person-card">
-              <a href="https://www.linkedin.com/in/sydney-vernon-1b426b21a/" target="_blank" title="LinkedIn">
-                <img src="ajt_site/images/SydneyVernon.jpg" alt="Sydney Vernon">
-                <div class="person-name">Sydney Vernon</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#85f6f3e0f7ebeac5f0f2abe0e1f0" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/sydney-vernon-1b426b21a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-              <div class="person-interests">Paleoclimate, methane, and applied math.</div>
+          <!-- Iana -->
+          <div class="person-card">
+            <a href="https://pcc.uw.edu/profiles/iana-ferguson" target="_blank" title="Website">
+              <img src="ajt_site/images/IanaFerguson.jpg" alt="Iana Ferguson">
+              <div class="person-name">Iana Ferguson</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:iyrf@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://pcc.uw.edu/profiles/iana-ferguson" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
             </div>
-
+            <div class="person-interests">Methane stable isotopes and wetlands.</div>
           </div>
-        </div>
 
-        <!-- Undergrads -->
-        <div class="col-md-12">
-          <HR>
-          <h3>Undergraduate Students</h3><BR>
-          <div class="people-grid">
-
-            <!-- Coco -->
-            <div class="person-card">
-              <a href="https://www.linkedin.com/in/coco-lipe/" target="_blank" title="LinkedIn">
-                <img src="ajt_site/images/CocoLipe.jpg" alt="Coco Lipe">
-                <div class="person-name">Coco Lipe</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#f99a9590899ccbb98c8ed79c9d8c" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/coco-lipe/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-              <div class="person-interests">Methane isotopes and halogens.</div>
+          <!-- Eliot -->
+          <div class="person-card">
+            <a href="https://eliotjkim.github.io/" target="_blank" title="Website">
+              <img src="ajt_site/images/EliotKim.jpg" alt="Eliot Kim">
+              <div class="person-name">Eliot Kim</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:ejkim1@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://eliotjkim.github.io/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
+              <a href="https://scholar.google.com/citations?user=kQ7acHQAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
             </div>
-
-            <!-- Laura -->
-            <div class="person-card">
-              <a href="mailto:pongl@uw.edu" title="Email">
-                <img src="ajt_site/images/LauraPong.jpg" alt="Laura Pong">
-                <div class="person-name">Laura Pong</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#98e8f7f6fff4d8edefb6fdfced" title="Email"><i class="fa-solid fa-envelope"></i></a>
-              </div>
-              <div class="person-interests">Heatwaves and carbon uptake.</div>
-            </div>
-
-            <!-- Isabella -->
-            <div class="person-card">
-              <a href="https://www.linkedin.com/in/isabella-showman-200287283/" target="_blank" title="LinkedIn">
-                <img src="ajt_site/images/IsabellaShowman.jpg" alt="Isabella Showman">
-                <div class="person-name">Isabella Showman</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#85ecf6edeaf2e8e4ebc5f0f2abe0e1f0" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/isabella-showman-200287283/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-              <div class="person-interests">Permafrost and synthetic aperture radar.</div>
-            </div>
-
-            <!-- Lauren -->
-            <div class="person-card">
-              <a href="https://www.linkedin.com/in/laurenyarrington/" target="_blank" title="LinkedIn">
-                <img src="ajt_site/images/LaurenYarrington.jpg" alt="Lauren Yarrington">
-                <div class="person-name">Lauren Yarrington</div>
-              </a>
-              <div class="person-links">
-                <a href="/cdn-cgi/l/email-protection#d7bbaeb6a5a5be97a2a0f9b2b3a2" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/laurenyarrington/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-              <div class="person-interests">Machine learning and atmospheric methane.</div>
-            </div>
-
+            <div class="person-interests">Chemistry-climate interactions and ML.</div>
           </div>
-        </div>
 
-        <!-- Alumni -->
-        <div class="col-md-12">
-          <HR>
-          <h3>Alumni</h3>
-          <p><b>Postdocs:</b></p>
-          <ul>
-            <li><u><a href="https://tailonghe.github.io/" target="_blank">Tai-Long He</a></u>, 2022&ndash;2024 postdoc. Next position: postdoc at Harvard University.</li>
-          </ul>
-          <p><b>Grad students:</b></p>
-          <ul>
-            <li><u><a href="https://www.linkedin.com/in/johannes-gensheimer-27380a14b" target="_blank">Johannes Gensheimer</a></u>, 2019&ndash;2021 MS (at Technical University of Munich). Next position: PhD student at the Max Planck Institute for Biogeochemistry.</li>
-          </ul>
-          <p><b>Undergrads:</b></p>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/alyssa-tou-989386261/" target="_blank"><u>Alyssa Tou</u></a>, 2024&ndash;2025 undergrad research assistant. Next position: Air Quality consultant at Ramboll.</li>
-            <li><a href="https://www.linkedin.com/in/max-taniguchi-king/" target="_blank"><u>Max Taniguchi-King</u></a>, 2024 summer research intern. Next position: Software engineer at Data Science &amp; Environment.</li>
-            <li><a href="https://www.linkedin.com/in/simon-zhang-7b9284180/" target="_blank"><u>Simon Zhang</u></a>, 2022&ndash;2023 undergrad research assistant. Next position: PhD student at U. Minnesota.</li>
-            <li><a href="https://www.linkedin.com/in/ryan-boyd-602535248" target="_blank"><u>Ryan Boyd</u></a>, 2021&ndash;2023 undergrad research assistant. Next position: PhD student at Princeton.</li>
-          </ul>
-          <p><b>Staff:</b></p>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/rboccamazzo/" target="_blank"><u>Rae Boccamazzo</u></a>, 2024&ndash;2025 project manager. Deceased.</li>
-    
+          <!-- Eric -->
+          <div class="person-card">
+            <a href="https://ericjmei.github.io/" target="_blank" title="Website">
+              <img src="ajt_site/images/EricMei.jpg" alt="Eric Mei">
+              <div class="person-name">Eric Mei</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:emei@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://ericjmei.github.io/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
+              <a href="https://scholar.google.com/citations?user=y8gpQDoAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+            </div>
+            <div class="person-interests">Paleo and chemistry-climate interactions.</div>
+          </div>
+
+          <!-- James -->
+          <div class="person-card">
+            <a href="https://james-y-yoon.github.io/" target="_blank" title="Website">
+              <img src="ajt_site/images/JamesYoon.jpg" alt="James Yoon">
+              <div class="person-name">James Yoon</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:jyyoon@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://james-y-yoon.github.io/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
+              <a href="https://scholar.google.com/citations?user=7PUTovAAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+            </div>
+            <div class="person-interests">Isoprene, soil NO<sub>x</sub>, and the oxidative capacity.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Postbac -->
+      <div class="col-md-12">
+        <hr>
+        <h3>Postbac Researchers</h3><br>
+        <div class="people-grid">
+
+          <!-- Sydney -->
+          <div class="person-card">
+            <a href="https://www.linkedin.com/in/sydney-vernon-1b426b21a/" target="_blank" title="LinkedIn">
+              <img src="ajt_site/images/SydneyVernon.jpg" alt="Sydney Vernon">
+              <div class="person-name">Sydney Vernon</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:sverno@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/sydney-vernon-1b426b21a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-interests">Paleoclimate, methane, and applied math.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Undergrads -->
+      <div class="col-md-12">
+        <hr>
+        <h3>Undergraduate Students</h3><br>
+        <div class="people-grid">
+
+          <!-- Coco -->
+          <div class="person-card">
+            <a href="https://www.linkedin.com/in/coco-lipe/" target="_blank" title="LinkedIn">
+              <img src="ajt_site/images/CocoLipe.jpg" alt="Coco Lipe">
+              <div class="person-name">Coco Lipe</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:clipe2@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/coco-lipe/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-interests">Methane isotopes and halogens.</div>
+          </div>
+
+          <!-- Laura -->
+          <div class="person-card">
+            <a href="mailto:pongl@uw.edu" title="Email">
+              <img src="ajt_site/images/LauraPong.jpg" alt="Laura Pong">
+              <div class="person-name">Laura Pong</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:pongl@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="person-interests">Heatwaves and carbon uptake.</div>
+          </div>
+
+          <!-- Isabella -->
+          <div class="person-card">
+            <a href="https://www.linkedin.com/in/isabella-showman-200287283/" target="_blank" title="LinkedIn">
+              <img src="ajt_site/images/IsabellaShowman.jpg" alt="Isabella Showman">
+              <div class="person-name">Isabella Showman</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:ishowman@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/isabella-showman-200287283/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-interests">Permafrost and synthetic aperture radar.</div>
+          </div>
+
+          <!-- Lauren -->
+          <div class="person-card">
+            <a href="https://www.linkedin.com/in/laurenyarrington/" target="_blank" title="LinkedIn">
+              <img src="ajt_site/images/LaurenYarrington.jpg" alt="Lauren Yarrington">
+              <div class="person-name">Lauren Yarrington</div>
+            </a>
+            <div class="person-links">
+              <a href="mailto:lyarri@uw.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/laurenyarrington/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-interests">Machine learning and atmospheric methane.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Alumni -->
+      <div class="col-md-12">
+        <hr>
+        <h3>Alumni</h3>
+        <p><strong>Postdocs:</strong></p>
+        <ul>
+          <li><u><a href="https://tailonghe.github.io/" target="_blank">Tai-Long He</a></u>, 2022&ndash;2024 postdoc. Next position: postdoc at Harvard University.</li>
+        </ul>
+        <p><strong>Grad students:</strong></p>
+        <ul>
+          <li><u><a href="https://www.linkedin.com/in/johannes-gensheimer-27380a14b" target="_blank">Johannes Gensheimer</a></u>, 2019&ndash;2021 MS (at Technical University of Munich). Next position: PhD student at the Max Planck Institute for Biogeochemistry.</li>
+        </ul>
+        <p><strong>Undergrads:</strong></p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/alyssa-tou-989386261/" target="_blank"><u>Alyssa Tou</u></a>, 2024&ndash;2025 undergrad research assistant. Next position: Air Quality consultant at Ramboll.</li>
+          <li><a href="https://www.linkedin.com/in/max-taniguchi-king/" target="_blank"><u>Max Taniguchi-King</u></a>, 2024 summer research intern. Next position: Software engineer at Data Science &amp; Environment.</li>
+          <li><a href="https://www.linkedin.com/in/simon-zhang-7b9284180/" target="_blank"><u>Simon Zhang</u></a>, 2022&ndash;2023 undergrad research assistant. Next position: PhD student at U. Minnesota.</li>
+          <li><a href="https://www.linkedin.com/in/ryan-boyd-602535248" target="_blank"><u>Ryan Boyd</u></a>, 2021&ndash;2023 undergrad research assistant. Next position: PhD student at Princeton.</li>
+        </ul>
+        <p><strong>Staff:</strong></p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/rboccamazzo/" target="_blank"><u>Rae Boccamazzo</u></a>, 2024&ndash;2025 project manager. Deceased.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Alexander J. Turner - 2026</p>
+    </footer>
+  </div>
+
+  <script src="bootstrap-3.3.2-dist/js/jquery.min.js"></script>
+  <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

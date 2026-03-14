@@ -1,100 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=.37">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="ajt_site/images/logo.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="ajt_site/images/logo.ico">
+  <title>Turner Group</title>
+  <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-3.3.2-dist/css/homestyle.css" rel="stylesheet">
+</head>
+<body>
 
-    <title>Turner Group</title>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Turner Group</a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="hermes.html">Computing</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="https://drive.google.com/drive/u/1/folders/1GsqfX12tf3sA6yZZ7Enyfh3E0_927cRW" target="_blank">Internal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Banner image -->
+  <div class="jumbotron"></div>
 
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-	<link href="./bootstrap-3.3.2-dist/css/homestyle.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-  <body>
-
-
-    <!-- Nav bar -->
-    <div class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Turner Group</a>
-        </div>
-        <div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="hermes.html">Computing</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="https://drive.google.com/drive/u/1/folders/1GsqfX12tf3sA6yZZ7Enyfh3E0_927cRW" target="_blank">Internal</a></li>
-          </ul>
-        </div>
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Welcome</h2>
+        <p>Our group works on a variety of topics related to atmospheric chemistry, the carbon cycle, remote sensing, and inverse modeling. Broadly, our research focuses on understanding how carbon cycles through different reservoirs in the earth system. An underlying theme of our work is quantifying the impacts of variations in atmospheric chemistry on the carbon cycle and, conversely, bringing insights from the carbon cycle into atmospheric chemistry.</p>
+        <p><a class="btn btn-default" href="research.html" role="button">Research interests &raquo;</a></p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <h2>Contact</h2>
+        <p>
+          <strong>Alex Turner</strong><br>
+          Assistant Professor<br>
+          Dept of Atmospheric and Climate Science<br>
+          University of Washington<br>
+          <a href="mailto:turneraj@uw.edu">turneraj (at) uw (dot) edu</a>
+        </p>
       </div>
     </div>
 
+    <hr>
 
-    <!-- Main header image -->
-    <div class="jumbotron"></div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Alexander J. Turner - 2026</p>
+    </footer>
+  </div>
 
-
-    <!-- Container -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-        	<h2>Welcome</h2>
-          <p> Our group works on a variety of topics related to atmospheric chemistry, the carbon cycle, remote sensing, and inverse modeling.  Broadly, our research focuses on understanding how carbon cycles through different reservoirs in the earth system.  An underlying theme of our work is quantifying the impacts of variations in atmospheric chemistry on the carbon cycle and, conversely, bringing insights from the carbon cycle into atmospheric chemistry.</p>
-          <p><a class="btn btn-default" href="research.html" role="button">Research interests &raquo;</a></p>
-        </div>
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-5">
-          <h2>Contact</h2>
-          <p>
-            <big><b>Alex Turner</b></big><BR>
-            <!--<big><b><font color="4b2e83">Alex Turner</font></b></big><BR>-->
-            Assistant Professor<BR>
-            Dept of Atmospheric and Climate Science<BR>
-            University of Washington<BR>
-            <a href="mailto:turneraj@uw.edu">turneraj (at) uw (dot) edu</a><BR>
-          </p>
-
-        </div>
-      </div>
-
-      <hr>
-
-
-      <!-- Footer -->
-      <footer>
-        <p>&copy; Alexander J. Turner - 2026</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
-  </body>
+  <script src="bootstrap-3.3.2-dist/js/jquery.min.js"></script>
+  <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
 </html>

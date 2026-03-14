@@ -1,144 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=.37">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="ajt_site/images/logo.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="ajt_site/images/logo.ico">
+  <title>Turner Group</title>
+  <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-3.3.2-dist/css/homestyle.css" rel="stylesheet">
+</head>
+<body>
 
-    <title>Turner Group</title>
+  <!-- Nav bar -->
+  <a name="RPtop"></a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Turner Group</a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="hermes.html">Computing</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="https://drive.google.com/drive/u/1/folders/1GsqfX12tf3sA6yZZ7Enyfh3E0_927cRW" target="_blank">Internal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Research Interests</h2>
+        <p><strong>Our research is at the intersection of atmospheric chemistry and the carbon cycle.</strong>
+        Specifically, our work aims to quantify the impacts of variations in atmospheric chemistry on the carbon cycle and, conversely, bring insights from the carbon cycle into atmospheric chemistry. The primary tools that we use and develop in our work are: Bayesian inference, machine learning, and satellite remote sensing. Please see below for details on current research areas.</p>
 
+        <p><strong>Current Research Areas:</strong></p>
+        <ul>
+          <li><a href="#RPmethane">Sources and sinks of atmospheric methane</a></li>
+          <li><a href="#RPhydroxyl">Chemistry-climate feedbacks, variability, and predictability</a></li>
+          <li><a href="#RPinverse">High-dimensional inverse problems</a></li>
+        </ul>
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-	<link href="./bootstrap-3.3.2-dist/css/homestyle.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-  <body>
-
-
-    <!-- Nav bar -->
-    <a name="RPtop"></a>
-    <div class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <!--<div class="navbar-header">-->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Turner Group</a>
-        </div>
-        <div>
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="hermes.html">Computing</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="https://drive.google.com/drive/u/1/folders/1GsqfX12tf3sA6yZZ7Enyfh3E0_927cRW" target="_blank">Internal</a></li>
-          </ul>
-        </div>
+        <p><strong>Projects, Field Campaigns, Satellite Missions, and Codes:</strong></p>
+        <ul>
+          <li><a href="https://fetch4.github.io/" target="_blank"><strong>FETCH<sub>4</sub></strong>: Fate, Emissions, and Transport of CH<sub>4</sub> in past and modern atmospheres</a></li>
+          <li><a href="https://footnet-uw.github.io/" target="_blank"><strong>FootNet</strong>: ML emulator of Lagrangian atmospheric transport</a></li>
+          <li><a href="https://strive.uw.edu/" target="_blank"><strong>STRIVE</strong>: NASA satellite mission to provide observations from the upper troposphere to the mesosphere</a></li>
+        </ul>
+        <hr>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Current Research Areas</h2>
 
-    <!-- Container -->
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-        <!--Research Interests-->
-        <h2>Research Interests</h2>
-        <b>Our research is at the intersection of atmospheric chemistry and the carbon cycle.</b><BR>  Specifically, our work aims to quantify the impacts of variations in atmospheric chemistry on the carbon cycle and, conversely, bring insights from the carbon cycle into atmospheric chemistry.  The primary tools that we use and develop in our work are: Bayesian inference, machine learning, and satellite remote sensing.  Please see below for details on current research areas.<BR>
-        <BR>
-        <b>Current Research Areas:</b>
-        <ul>
-           <li><a href="#RPmethane">Sources and sinks of atmospheric methane</a></li>
-           <li><a href="#RPhydroxyl">Chemistry-climate feedbacks, variability, and predictability</a></li>
-           <li><a href="#RPinverse">High-dimensional inverse problems</a></li>
-        </ul>
-        <b>Projects, Field Campaigns, Satellite Missions, and Codes:</b>
-        <ul>
-           <li><a href="https://fetch4.github.io/" target="_blank"><b>FETCH<sub>4</sub></b>: Fate, Emissions, and Transport of CH<sub>4</sub> in past and modern atmospheres</a></li>
-           <li><a href="https://footnet-uw.github.io/" target="_blank"><b>FootNet</b>: ML emulator of Lagrangian atmospheric transport</a></li>
-           <li><a href="https://strive.uw.edu/" target="_blank"><b>STRIVE</b>: NASA satellite mission to provide observations from the upper troposphere to the mesosphere</a></li>
-        </ul>
-<HR>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-        <!--Current Research Projects-->
-        <a name="RPcurrent"></a><h2>Current Research Areas</h2>
-
-<!--Methane-->
-           <div class="row"><div class="col-md-12 bg-info">
-           <a name="RPmethane"></a><h3>Sources and sinks of atmospheric methane  <small><a href="#RPtop">(back to top)</a></small></h3>
-           <p> Methane is the second most important anthropogenic greenhouse gas after CO<sub>2</sub>.  As a short-lived climate forcing agent (lifetime ~10 years), it provides a lever for slowing near-term climate change.  Major anthropogenic sources of methane include oil/gas exploration and use, livestock, landfills, coal mining, and rice cultivation.  Wetlands are the dominant natural source.  The magnitude and spatial distribution of methane sources is highly uncertain and difficult to constrain.
-           <BR><BR><img src="ajt_site/other/ch4.gif" width="577" style="border:2px solid black"><BR>
-           <b>Figure:</b><I>  Simulated methane concentrations using emissions constrained by satellite observations.</I>
-           <h4>Objectives:</h4>
-           <ul>
+        <!-- Methane -->
+        <div class="row">
+          <div class="col-md-12 bg-info">
+            <a name="RPmethane"></a>
+            <h3>Sources and sinks of atmospheric methane <small><a href="#RPtop">(back to top)</a></small></h3>
+            <p>Methane is the second most important anthropogenic greenhouse gas after CO<sub>2</sub>. As a short-lived climate forcing agent (lifetime ~10 years), it provides a lever for slowing near-term climate change. Major anthropogenic sources of methane include oil/gas exploration and use, livestock, landfills, coal mining, and rice cultivation. Wetlands are the dominant natural source. The magnitude and spatial distribution of methane sources is highly uncertain and difficult to constrain.</p>
+            <img src="ajt_site/other/ch4.gif" class="research-figure"><br>
+            <p><strong>Figure:</strong> <em>Simulated methane concentrations using emissions constrained by satellite observations.</em></p>
+            <h4>Objectives:</h4>
+            <ul>
               <li>Improve our understanding of processes governing the variations in atmospheric methane</li>
               <li>Test the utility of space-borne observations for constraining methane emissions</li>
               <li>Identify the drivers of methane changes over the last 2.5 million years</li>
-           </ul>
-           </div></div><BR>
+            </ul>
+          </div>
+        </div><br>
 
-<!--OH-->
-           <div class="row"><div class="col-md-12 bg-info">
-           <a name="RPhydroxyl"></a><h3>Chemistry-climate feedbacks, variability, and predictability  <small><a href="#RPtop">(back to top)</a></small></h3>
-           <p> The hydroxyl radical (OH) is the primary oxidant for a number of non-CO<sub>2</sub> greenhouse gases and CFCs.  It also regulates the production of tropospheric ozone, a leading pollutant.  As such, changes in tropospheric OH could have large implications for both future climate and air quality.  However we currently lack a predictive understanding of OH on decadal-to-centennial timescales, evidenced by the disagreement between global models in their simulation of OH.
-           <BR><BR><img src="ajt_site/other/oh.gif" width="577" style="border:2px solid black"><BR>
-           <b>Figure:</b><I>  OH concentrations in a 6000 year equilibrium simulation with a coupled chemistry-climate model.</I>
-           <h4>Objectives:</h4>
-           <ul>
-              <li>Investigate the chemical feedback mechanisms and their timescales in both simple and complex models</li> 
+        <!-- OH -->
+        <div class="row">
+          <div class="col-md-12 bg-info">
+            <a name="RPhydroxyl"></a>
+            <h3>Chemistry-climate feedbacks, variability, and predictability <small><a href="#RPtop">(back to top)</a></small></h3>
+            <p>The hydroxyl radical (OH) is the primary oxidant for a number of non-CO<sub>2</sub> greenhouse gases and CFCs. It also regulates the production of tropospheric ozone, a leading pollutant. As such, changes in tropospheric OH could have large implications for both future climate and air quality. However we currently lack a predictive understanding of OH on decadal-to-centennial timescales, evidenced by the disagreement between global models in their simulation of OH.</p>
+            <img src="ajt_site/other/oh.gif" class="research-figure"><br>
+            <p><strong>Figure:</strong> <em>OH concentrations in a 6000 year equilibrium simulation with a coupled chemistry-climate model.</em></p>
+            <h4>Objectives:</h4>
+            <ul>
+              <li>Investigate the chemical feedback mechanisms and their timescales in both simple and complex models</li>
               <li>Identify aspects of the chemical system that may be more predictable</li>
               <li>Quantify the importance of the natural feedbacks and oscillations for predictability of greenhouse gas burdens</li>
-           </ul>
-           </div></div><BR>
+            </ul>
+          </div>
+        </div><br>
 
-<!--ML-->
-           <div class="row"><div class="col-md-12 bg-info">
-           <a name="RPinverse"></a><h3>High-dimensional inverse problems  <small><a href="#RPtop">(back to top)</a></small></h3>
-           <p> Inverse models quantify the state variables driving the evolution of a physical system by using observations of that system.   This requires a physical model that relates a set of input variables (state vector) to a set of output variables (observation vector).  Obtaining solutions to high dimensional inverse problems can be computationally expensive or intractable.
-           <BR><BR><img src="ajt_site/other/footnet.png" width="500" style="border:2px solid black"><BR>
-           <b>Figure:</b><I>  Comparison source-receptor footprints generated by a full-physics model (left) and our FootNet machine learning model (right).</I>
-           <h4>Objectives:</h4>
-           <ul>
+        <!-- Inverse -->
+        <div class="row">
+          <div class="col-md-12 bg-info">
+            <a name="RPinverse"></a>
+            <h3>High-dimensional inverse problems <small><a href="#RPtop">(back to top)</a></small></h3>
+            <p>Inverse models quantify the state variables driving the evolution of a physical system by using observations of that system. This requires a physical model that relates a set of input variables (state vector) to a set of output variables (observation vector). Obtaining solutions to high dimensional inverse problems can be computationally expensive or intractable.</p>
+            <img src="ajt_site/other/footnet.png" width="500" class="research-figure"><br>
+            <p><strong>Figure:</strong> <em>Comparison source-receptor footprints generated by a full-physics model (left) and our FootNet machine learning model (right).</em></p>
+            <h4>Objectives:</h4>
+            <ul>
               <li>Develop computationally efficient machine learning models for flux inversions</li>
               <li>Explore different methods of constructing the state vector in an inverse model</li>
               <li>Develop novel methods for estimating greenhouse gas fluxes</li>
-           </ul>
-           </div></div><BR>
-<HR>
-        </div>
+            </ul>
+          </div>
+        </div><br>
+
+        <hr>
       </div>
+    </div>
 
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Alexander J. Turner - 2026</p>
+    </footer>
+  </div>
 
-      <!-- Footer -->
-      <footer>
-        <p>&copy; Alexander J. Turner - 2026</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+  <script src="bootstrap-3.3.2-dist/js/jquery.min.js"></script>
+  <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
 </html>
