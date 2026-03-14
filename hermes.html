@@ -1,125 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=.37">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="ajt_site/images/logo.ico">
-    <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.min.css">
-    <script src="bootstrap-3.3.2-dist/js/jquery.min.js"></script>
-    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
-    <style>.carousel-inner > .item > img { width:500px;height:400px; } </style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="ajt_site/images/logo.ico">
+  <title>Turner Group</title>
+  <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-3.3.2-dist/css/homestyle.css" rel="stylesheet">
+</head>
+<body>
 
-    <title>Turner Group</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="./bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-	<link href="./bootstrap-3.3.2-dist/css/homestyle.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-  <body>
-
-
-    <!-- Nav bar -->
-    <div class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Turner Group</a>
-        </div>
-        <div>
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="people.html">People</a></li>
-            <li class="active"><a href="hermes.html">Computing</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="https://drive.google.com/drive/u/1/folders/1GsqfX12tf3sA6yZZ7Enyfh3E0_927cRW" target="_blank">Internal</a></li>
-          </ul>
-        </div>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Turner Group</a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="people.html">People</a></li>
+          <li class="active"><a href="hermes.html">Computing</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="https://drive.google.com/drive/u/1/folders/1GsqfX12tf3sA6yZZ7Enyfh3E0_927cRW" target="_blank">Internal</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-
-    <!-- Container -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-11">
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-11">
         <h2>Hermes</h2>
-        <b>Hermes is our group's dedicated high performance computing system.</b><BR>  In Greek mythology, Hermes was the messenger of the gods. Hermes could also fly and was the patron of alchemists.  As such, he seemed like a fitting namesake for a high performance computing system used to study atmospheric chemistry.<BR>
-<HR>
-        <b>System Summary</b>
+        <p><strong>Hermes is our group's dedicated high performance computing system.</strong><br>
+        In Greek mythology, Hermes was the messenger of the gods. Hermes could also fly and was the patron of alchemists. As such, he seemed like a fitting namesake for a high performance computing system used to study atmospheric chemistry.</p>
+        <hr>
+
+        <p><strong>System Summary</strong></p>
         <ul>
-           <li><b>Compute:</b> 24 nodes, 768 CPU cores</li>
-           <li><b>GPUs:</b> 2&times; H100 GPUs and 24&times; A2 GPUs</li>
-           <li><b>Memory:</b> 192 GB RAM per compute node and 1 TB RAM per GPU node</li>
-           <li><b>Storage:</b> 1 PB usable RAID-6 storage</li>
-           <li><b>Interconnect:</b> 100 GB/s InfiniBand</li>
+          <li><strong>Compute:</strong> 24 nodes, 768 CPU cores</li>
+          <li><strong>GPUs:</strong> 2&times; H100 GPUs and 24&times; A2 GPUs</li>
+          <li><strong>Memory:</strong> 192 GB RAM per compute node and 1 TB RAM per GPU node</li>
+          <li><strong>Storage:</strong> 1 PB usable RAID-6 storage</li>
+          <li><strong>Interconnect:</strong> 100 GB/s InfiniBand</li>
         </ul>
-        <BR>
-        <b>Detailed Description</b>
+
+        <p><strong>Detailed Description</strong></p>
         <ul>
-           <li>Compute nodes:</li>
-           <ul>
+          <li>Compute nodes:
+            <ul>
               <li>24 compute nodes</li>
               <li>Dual Intel Xeon Gold 6226R processors (16 cores each, 2.9 GHz)</li>
               <li>192 GB RAM per node</li>
               <li>1&times; NVIDIA A2 GPU (16 GB) per node</li>
-           </ul>
-           <li>GPU partition:</li>
-           <ul>
+            </ul>
+          </li>
+          <li>GPU partition:
+            <ul>
               <li>2&times; NVIDIA H100 GPUs (80 GB each)</li>
               <li>Dual Intel Xeon Gold 6526Y (16 cores each, 2.8 GHz)</li>
               <li>1 TB RAM</li>
               <li>7 TB local cache disk</li>
-           </ul>
-           <li>Storage and networking:</li>
-           <ul>
+            </ul>
+          </li>
+          <li>Storage and networking:
+            <ul>
               <li>1020 TB RAID-6 shared storage</li>
               <li>Mellanox MSB7790-EB2F InfiniBand switch</li>
               <li>36 ports</li>
               <li>100 GB/s full bi-directional bandwidth per port</li>
-           </ul>
-           <li>Software environment:</li>
-           <ul>
+            </ul>
+          </li>
+          <li>Software environment:
+            <ul>
               <li>Debian GNU OS</li>
               <li>Slurm workload manager</li>
-           </ul>
+            </ul>
+          </li>
         </ul>
-
-        </div>
       </div>
+    </div>
 
-<HR> <!-- ...not sure why I need to force a line here? -->
+    <hr>
 
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Alexander J. Turner - 2026</p>
+    </footer>
+  </div>
 
-      <!-- Footer -->
-      <footer>
-        <p>&copy; Alexander J. Turner - 2026</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
-  </body>
+  <script src="bootstrap-3.3.2-dist/js/jquery.min.js"></script>
+  <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
 </html>
