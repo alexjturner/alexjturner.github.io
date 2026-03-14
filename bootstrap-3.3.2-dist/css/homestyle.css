@@ -29,29 +29,6 @@ body {
   margin-bottom: 6px;
 }
 
-/* ── Group page: responsive photos ── */
-.group-photo {
-  max-width: 100%;
-  height: auto;
-  border: 2px solid black;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.group-photo-pair {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-
-.group-photo-pair img {
-  flex: 1 1 300px;
-  max-width: 100%;
-  height: auto;
-  border: 2px solid black;
-}
-
 /* ── People page ── */
 .people-grid {
   display: flex;
@@ -137,6 +114,73 @@ body {
   flex-shrink: 0;
 }
 
+/* ── Group page: carousels ── */
+.year-section {
+  margin-bottom: 48px;
+}
+
+.year-section h3 {
+  margin-bottom: 16px;
+}
+
+.carousel {
+  background: #000;
+  border-radius: 4px 4px 0 0;
+}
+
+.carousel-inner > .item {
+  text-align: center;
+}
+
+.carousel-inner > .item > img {
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.carousel-caption {
+  display: none;
+}
+
+.carousel-caption-below {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  padding: 10px 16px;
+  font-size: 0.9em;
+  color: #333;
+  min-height: 42px;
+}
+
+.carousel-control {
+  width: 8%;
+  background-image: none !important;
+  filter: none !important;
+}
+
+.carousel-control .glyphicon {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  font-size: 24px;
+}
+
+.carousel-indicators {
+  bottom: 10px;
+}
+
+.carousel-indicators li {
+  background-color: rgba(255,255,255,0.5);
+  border-color: rgba(255,255,255,0.5);
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  border-color: #fff;
+}
+
 /* ── Mobile ── */
 @media (max-width: 767px) {
   /* People cards: two per row on small screens */
@@ -163,6 +207,16 @@ body {
   /* Research figures: full width */
   .research-figure {
     width: 100% !important;
+  }
+
+  /* Carousel: shorter images on mobile */
+  .carousel-inner > .item > img {
+    max-height: 320px;
+  }
+
+  /* Carousel: full width on mobile */
+  .year-section {
+    max-width: 100%;
   }
 }
 
